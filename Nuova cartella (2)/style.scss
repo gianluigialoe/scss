@@ -1,0 +1,85 @@
+@import "mixin";
+@import "variabili";
+
+img{
+    @include img;
+}
+.uno {
+   
+     @include botton;
+     background-color: $primoColore;
+     cursor: pointer;
+    transition: transform 0.2s;
+     
+     
+}
+
+.due{
+    
+    @include botton;
+    background-color: $secondoClore;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.tre{
+    
+    @include botton;
+    background-color: $Terzocolore;
+    cursor: pointer;
+    transition: transform 0.2s;
+    
+}
+
+p{
+    color: white;
+    font-size: 2rem;
+}
+footer .contenitoreFinale{
+    @include ultimoContenitore;
+  }
+header div{
+    display: flex;
+    font-size: 2rem;
+    justify-content: space-between;
+   
+}
+header div ul {
+    display: flex;
+    list-style-type: none;
+    
+}
+header div ul li{
+    margin: 5px;
+    color: aliceblue;
+
+}
+main{
+     background-color: violet;
+    display: flex;
+    animation: ritardoMain 1s ease-in-out;
+    
+}
+h1{
+    font-size: 7rem;
+}
+
+.uno:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+ footer .contenitoreFinale {
+    border-radius: 25%;
+    background-color: aqua;
+  }
+  body{
+    background-color: aliceblue;
+  }
+  @keyframes ritardoMain {
+    from {
+      opacity: 0; /* Inizialmente invisibile */
+    }
+    to {
+      opacity: 1; /* Rendi visibile il main */
+    }
+  }
